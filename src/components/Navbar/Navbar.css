@@ -1,0 +1,50 @@
+.nav {
+    position: absolute; /* Use absolute positioning to place it over the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensure it's above the background */
+  }
+  
+  .nav-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    cursor: pointer;
+  }
+  
+  .nav-contact {
+    font-weight: bold;
+  }
+  
+  body {
+    margin: 0; /* Remove default margin */
+    padding-top: 0; /* No padding since navbar is absolute */
+  }
+  
+  .background {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure the background is behind the navbar */
+  }
+  
